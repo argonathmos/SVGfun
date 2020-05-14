@@ -1,5 +1,7 @@
 SVGfun
 
+https://argonathmos.github.io/SVGfun/
+
 Learn to access and modify SVG attribute's value with JS
 
 I created a simple SVG graphic.
