@@ -158,7 +158,7 @@ const randomButton = document.querySelector('#random');
 
 // Referencing SVG elements
 const cloud = document.querySelector('#cloud');
-const paths = document.querySelectorAll('#writing > path');
+const paths = document.querySelectorAll('#writing > path'); // "paths" refers to the text "Hello World!" drawn by hand using multiple svg paths. 
 
 // Add each color from the list inside the <select> HTML element on the web page 
 // (148 values)
