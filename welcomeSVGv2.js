@@ -207,8 +207,9 @@ function applyRandomColors(){
     let uniquePathcolor = randFromArray(colorKeywords);
     cloud.setAttribute("stroke",randFromArray(colorKeywords));
     cloud.setAttribute("fill",randFromArray(colorKeywords));
+    
     for(let i = 0; i<paths.length; i++){
         paths[i].setAttribute("stroke", uniquePathcolor);
     }
-
+}
 
