@@ -201,15 +201,14 @@ randomBtn.addEventListener('click', applyRandomColors);
 function randFromArray(a){
     let index = Math.floor(Math.random()*a.length);
     return a[index];
-}
+};
 
 function applyRandomColors(){
     let uniquePathcolor = randFromArray(colorKeywords);
     cloud.setAttribute("stroke",randFromArray(colorKeywords));
-    cloud.setAttribute("fill",randFromArray(colorKeywords));
-    
+    cloud.setAttribute("fill",randFromArray(colorKeywords)); 
     for(let i = 0; i<paths.length; i++){
         paths[i].setAttribute("stroke", uniquePathcolor);
-    }
-}
+    };
+};
 
