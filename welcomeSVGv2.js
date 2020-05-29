@@ -3,7 +3,7 @@ const strokeColorInput = document.querySelector('#stroke');
 const fillColorInput = document.querySelector('#fill');
 const pathColorInput = document.querySelector('#path');
 
-const exportBtn = document.querySelector('.export button');
+const dlBtn = document.querySelector('.download button');
 const randomBtn = document.querySelector('.random button');
 
 
@@ -34,7 +34,7 @@ function applyPath(){
 //-----EXPORTING THE CUSTOM COLORED SVG -----
 //When the Export button is clicked: download the updated version of the SVG.
 let svg = document.querySelector('svg');
-exportBtn.addEventListener('click',function(){
+dlBtn.addEventListener('click',function(){
     download('customHelloWorld.svg', svg.outerHTML);
 });
 //Create the download function:
