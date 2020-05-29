@@ -1,6 +1,7 @@
 html{
     height:100%;
     margin:0;
+    font-size:10px;
 }
 body{
     width:90%;
@@ -21,6 +22,7 @@ h1{
     text-align: center;
     padding:20px;
     margin:0;
+    font-size:3.5rem;
      
     
 }
@@ -54,7 +56,7 @@ svg{
     padding: 20px 20px;
     border-right: 2px solid darkgray;
     border-left: 2px solid darkgray;
-    
+    font-size:1.5rem;
 
     
 }
@@ -80,19 +82,29 @@ input:hover{
     cursor:pointer;
 }
 
-.export button{
-    background-color: DodgerBlue;
+
+.download button, .random button{
+    background-color: hotpink;
     border: none;
     color: white;
-    padding: 12px 30px;
+    padding:12px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: calc(0.9rem + 0.9vw);
+    width:130px;
+    border-radius:5px;
+    
 }
 
-/* Darker background on mouse-over */
-.export button:hover {
-  background-color: RoyalBlue;
+.download button:hover {
+  text-decoration:underline;
 } 
-
-
+.random button{
+    background-image:url(rainbow-bg-150.jpg);
+    background-repeat: no-repeat;
+    background-size: 135px 60px;
+    background-position:center;
+}
+.random button:hover{
+    text-decoration:underline;
+}
 
