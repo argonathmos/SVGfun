@@ -56,15 +56,15 @@ function applyRandomColors(){
     let fillColor = '#'+((1<<24)*Math.random()|0).toString(16);
 
     cloud.setAttribute('stroke',strokeColor);
-    strokeColorInput.setAttribute('value',strokeColor);
+    strokeColorInput.value = strokeColor;
 
     cloud.setAttribute('fill', fillColor);
-    fillColorInput.setAttribute('value',fillColor);
+    fillColorInput.value = fillColor;
 
     for(let i = 0; i<paths.length; i++){
         paths[i].setAttribute('stroke', uniquePathcolor);
     }
-    pathColorInput.setAttribute('value', uniquePathcolor);
+    pathColorInput.value = uniquePathcolor;
 
 }
 // Applying random colors everytime the page loads:
