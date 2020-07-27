@@ -1,13 +1,11 @@
-// Referencing the HTML elements
+// Referencing HTML elements:
 const strokeColorInput = document.querySelector('#stroke');
 const fillColorInput = document.querySelector('#fill');
 const pathColorInput = document.querySelector('#path');
-
 const dlBtn = document.querySelector('.download button');
 const randomBtn = document.querySelector('.random button');
 
-
-// Referencing SVG elements
+// Referencing SVG elements:
 const cloud = document.querySelector('#cloud');
 const paths = document.querySelectorAll('#writing > path');
 
@@ -16,8 +14,9 @@ strokeColorInput.addEventListener('input', applyStroke);
 fillColorInput.addEventListener('input',applyFill);
 pathColorInput.addEventListener('input', applyPath);
 
-// Functions applying the selected color to specific areas
-// of the SVG:
+/* Defining the functions that applies
+the selected color to specific areas
+of the SVG: */
 function applyStroke(){
     cloud.setAttribute("stroke",strokeColorInput.value);
 }
@@ -30,9 +29,9 @@ function applyPath(){
     }
 }
 
-
-//-----EXPORTING THE CUSTOM COLORED SVG -----
-//When the Export button is clicked: download the updated version of the SVG.
+/* ----- EXPORTING THE CUSTOM COLORED SVG -----
+When the Export button is clicked: 
+download the updated version of the SVG. */
 let svg = document.querySelector('svg');
 dlBtn.addEventListener('click',function(){
     download('customHelloWorld.svg', svg.outerHTML);
@@ -50,11 +49,13 @@ function download(filename, data){
 // ----- RANDOM color generation -----
 randomBtn.addEventListener('click', applyRandomColors);
 
+
 function applyRandomColors(){
-    let uniquePathcolor = '#'+((1<<24)*Math.random()|0).toString(16);
+    let uniquePathcolor = '#'+((1<<24)*Math.random()|0).toString(16); // Generating random hexadecimal color codes.
     let strokeColor = '#'+((1<<24)*Math.random()|0).toString(16);
     let fillColor = '#'+((1<<24)*Math.random()|0).toString(16);
 
+    // Apply the Hex color codes to the SVG areas.
     cloud.setAttribute('stroke',strokeColor);
     strokeColorInput.value = strokeColor;
 
@@ -67,5 +68,7 @@ function applyRandomColors(){
     pathColorInput.value = uniquePathcolor;
 
 }
-// Applying random colors everytime the page loads:
+
+
+// ------ Applying random colors everytime the page loads: -----
 applyRandomColors();
