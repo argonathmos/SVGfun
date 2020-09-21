@@ -28,7 +28,6 @@ h1{
 }
 
 svg{
-    padding-top:auto;
     max-height:450px;
     max-width:100%;
     
@@ -57,16 +56,13 @@ svg{
     border-right: 2px solid darkgray;
     border-left: 2px solid darkgray;
     font-size:1.5rem;
-
-    
 }
 
 .custom div{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-weight:bold;
-    
+    font-weight:bold;   
 }
 div.fill{
     margin:5px 0;
