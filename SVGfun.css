@@ -11,40 +11,32 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    
     height:100%;
     background-color:rgba(5, 5, 5, 0.808);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 h1{
-    
     border-bottom: 2px solid darkgray;
     text-align: center;
     padding:20px;
     margin:0;
     font-size:3.5rem;
-     
-    
 }
 
 svg{
     max-height:450px;
-    max-width:100%;
-    
-       
+    max-width:100%;   
 }
+
 #colorPicker{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    
     border-bottom: 2px solid darkgray;
     border-top: 2px solid darkgray;
-
     margin-bottom:5px;
-    
-    
 }
 
 .custom{
@@ -74,10 +66,10 @@ input{
     width:45px;
     padding:0;
 }
+
 input:hover{
     cursor:pointer;
 }
-
 
 .download button, .random button{
     background-color: hotpink;
@@ -88,7 +80,6 @@ input:hover{
     font-size: calc(0.9rem + 0.9vw);
     width:130px;
     border-radius:5px;
-    
 }
 
 .download button:hover {
