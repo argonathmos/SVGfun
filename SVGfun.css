@@ -4,7 +4,7 @@ html{
     font-size:10px;
 }
 body{
-    width:90%;
+    width:100%;
     margin: 0 auto;
     max-width: 800px;
     color: white;
@@ -21,9 +21,11 @@ h1{
     text-align: center;
     padding:20px;
     margin:0;
-    font-size:3.5rem;
+    font-size:3rem;
 }
-
+h1 span{
+    font-style: italic;
+}
 svg{
     max-height:450px;
     max-width:100%;   
@@ -37,6 +39,7 @@ svg{
     border-bottom: 2px solid darkgray;
     border-top: 2px solid darkgray;
     margin-bottom:5px;
+
 }
 
 .custom{
@@ -44,20 +47,24 @@ svg{
     flex-direction:column;
     justify-content: space-evenly;
     justify-self: stretch;
-    padding: 20px 20px;
+    padding: 5px;
     border-right: 2px solid darkgray;
     border-left: 2px solid darkgray;
-    font-size:1.5rem;
+    font-size:1.2rem;
 }
 
 .custom div{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-weight:bold;   
+    font-weight:400;   
 }
 div.fill{
     margin:5px 0;
+}
+.custom div.fill, .custom div.stroke, .custom div.path{
+    display: flex;
+    flex-direction: column;
 }
 input{
     border-style: none;
@@ -77,9 +84,11 @@ input:hover{
     color: white;
     padding:12px 0;
     cursor: pointer;
-    font-size: calc(0.9rem + 0.9vw);
-    width:130px;
+    font-size: calc(0.9rem + 0.7vw);
+    width:90px;
+    height: 90px;
     border-radius:5px;
+    
 }
 
 .download button:hover {
@@ -88,7 +97,7 @@ input:hover{
 .random button{
     background-image:url(rainbow-bg-150.jpg);
     background-repeat: no-repeat;
-    background-size: 135px 60px;
+    background-size: 95px 95px;
     background-position:center;
 }
 .random button:hover{
