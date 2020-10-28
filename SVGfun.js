@@ -39,7 +39,7 @@ dlBtn.addEventListener('click',function(){
 //Create the download function:
 function download(filename, data){
     let link = document.createElement('a');
-    link.setAttribute('href','data:image/svg+xml;charset=utf-8,'+encodeURIComponent(data)); // What is the difference between data:text/html or data:image/svg+xml here both works the same.
+    link.setAttribute('href','data:image/svg+xml;charset=utf-8,'+encodeURIComponent(data)); 
     link.setAttribute('download', filename);
     link.style.display = 'none';
     link.click();
